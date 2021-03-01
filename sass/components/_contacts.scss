@@ -2,6 +2,35 @@
   display: none;
 }
 
+.email-link,
+.phone-link {
+  display: inline-block;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.167px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color var(--transition-time) var(--time-function);
+
+  .footer &,
+  .footer & {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--footer-contacts-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts-list {
     display: block;
@@ -9,47 +38,43 @@
     list-style-type: none;
   }
 
+  // .contacts-item {
+  //   &:not(:last-child) {
+  //     margin-bottom: 10px;
+  //   }
+  // }
+
   .email-link,
   .phone-link {
-    display: inline-block;
-    align-items: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.167px;
-    letter-spacing: 0.02em;
-    color: var(--secondary-color);
-    text-decoration: none;
-    transition: color var(--transition-time) var(--time-function);
-
     .header &,
     .header & {
       display: flex;
     }
 
-    // .footer &,
-    // .footer & {
-    //   font-style: normal;
-    //   font-weight: 400;
-    //   line-height: 1.714;
-    //   letter-spacing: 0.03em;
-    //   color: var(--footer-contacts-color);
-    // }
+    .footer &,
+    .footer & {
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: var(--footer-contacts-color);
+    }
 
     &:hover,
     &:focus {
       color: var(--accent-color);
     }
   }
-  .email-link {
-    margin-bottom: 10px;
+
+  .header .email-link {
     padding-top: 21px;
+    padding-bottom: 5px;
   }
 
-  .phone-link {
+  .header .phone-link {
+    padding-top: 5px;
     padding-bottom: 21px;
   }
-
   .contacts-icon {
     margin-right: 8px;
 
@@ -90,35 +115,13 @@
 
   .email-link,
   .phone-link {
-    display: inline-block;
-    align-items: center;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.143px;
-    letter-spacing: 0.02em;
-    color: var(--secondary-color);
-    text-decoration: none;
-    transition: color var(--transition-time) var(--time-function);
+    font-size: 14px;
+    line-height: 1.142;
 
     .header &,
     .header & {
-      display: flex;
       padding-top: 32px;
       padding-bottom: 32px;
-    }
-
-    .footer &,
-    .footer & {
-      font-style: normal;
-      font-weight: 400;
-      line-height: 1.714;
-      letter-spacing: 0.03em;
-      color: var(--footer-contacts-color);
-    }
-
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
     }
   }
 

@@ -3,17 +3,24 @@
   padding: 0 15px;
   margin: 0 auto;
   outline: solid teal;
+
+  .header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-
-    .header & {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
   }
 }
 
@@ -24,6 +31,13 @@
     .header & {
       display: flex;
       align-items: center;
+    }
+
+    .footer & {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-around;
     }
   }
 }
@@ -40,6 +54,7 @@
     .footer & {
       display: flex;
       align-items: baseline;
+      flex-wrap: nowrap;
     }
   }
 }
