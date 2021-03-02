@@ -1066,16 +1066,16 @@ img {
 }
 
 .filter-list {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   flex-wrap: wrap;
+}
+
+.filter-list-item {
+  margin-bottom: 15px;
 }
 
 .filter-list-item:not(:last-child) {
   margin-right: 8px;
-}
-
-.filter-list-item:nth-last-child(-n + 3) {
-  margin-bottom: 15px;
 }
 
 .portfolio-list {
@@ -1173,6 +1173,10 @@ img {
   }
   .filter-list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  .filter-list-item {
+    margin-bottom: 0px;
   }
 }
 
