@@ -1059,17 +1059,21 @@ img {
 }
 
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .filter-list {
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .filter-list-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.filter-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 15px;
 }
 
 .portfolio-list {
@@ -1078,15 +1082,15 @@ img {
 
 .portfolio-item {
   position: relative;
-  margin-bottom: 30px;
-  max-width: 370px;
-  height: 404px;
+  width: 100%;
+  max-width: 450px;
+  max-height: 404px;
   background-color: var(--main-white-color);
   border: 1px solid var(--color-for-border);
 }
 
-.portfolio-item:not(:nth-child(3n)) {
-  margin-right: 30px;
+.portfolio-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .portfolio-item-link {
@@ -1120,7 +1124,7 @@ img {
 
 .portfolio-item-category {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
@@ -1152,6 +1156,52 @@ img {
 .portfolio-item-link:hover .overlay,
 .portfolio-item-link:focus .overlay {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    width: 100%;
+    max-width: 354px;
+    max-height: 440px;
+    background-color: var(--main-white-color);
+    border: 1px solid var(--color-for-border);
+  }
+  .portfolio-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .filter-list {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  .filter-list-item:not(:last-child) {
+    margin-right: 8px;
+  }
+  .portfolio-item {
+    position: relative;
+    max-width: 370px;
+    max-height: 404px;
+    background-color: var(--main-white-color);
+    border: 1px solid var(--color-for-border);
+  }
+  .portfolio-item:nth-child(odd) {
+    margin-right: 0px;
+  }
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .portfolio-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .portfolio-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
 }
 
 .footer {
