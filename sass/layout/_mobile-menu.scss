@@ -52,10 +52,6 @@
     list-style: none;
   }
 
-  // .mobile-menu-nav {
-  //   margin-bottom: 302px;
-  // }
-
   .mobile-menu-nav-item {
     margin-bottom: 32px;
   }
@@ -89,8 +85,8 @@
     font-weight: 500;
     font-size: 40px;
     line-height: 1.175;
-    text-align: center;
     letter-spacing: 0.02em;
+    color: var(--primary-color);
 
     transition: color var(--transition-time) var(--time-function);
 
@@ -117,5 +113,20 @@
     height: 100%;
 
     color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu-nav {
+    margin-bottom: 302px;
+  }
+
+  .mobile-menu-contacts {
+    margin-bottom: 64px;
+
+    & .phone-link {
+      font-size: 34px;
+      line-height: 1.176;
+    }
   }
 }
