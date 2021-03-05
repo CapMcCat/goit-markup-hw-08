@@ -12,7 +12,7 @@
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-white-color);
+  color: var(--the-lightest-color);
 }
 
 .modal-form-comment::placeholder {
@@ -35,7 +35,7 @@
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
-  color: var(--main-white-color);
+  color: var(--the-lightest-color);
 
   transition: border-color var(--transition-time) var(--time-function);
 
@@ -57,7 +57,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   background: var(--accent-color);
-  color: var(--main-white-color);
+  color: var(--the-lightest-color);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;

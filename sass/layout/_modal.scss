@@ -21,7 +21,7 @@
   max-width: 450px;
   max-height: 609px;
 
-  background-color: var(--main-white-color);
+  background-color: var(--the-lightest-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
@@ -54,7 +54,7 @@
 }
 
 .btn-close-icon {
-  fill: var(--dark-black);
+  fill: var(--the-darkest-color);
 }
 
 .modal-close-btn:hover .btn-close-icon,
@@ -197,7 +197,7 @@
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--main-white-color);
+  color: var(--the-lightest-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;

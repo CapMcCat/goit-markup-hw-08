@@ -19,10 +19,10 @@
 }
 
 .logo-text {
-  color: var(--dark-black);
+  color: var(--the-darkest-color);
 
   .footer & {
-    color: var(--main-white-color);
+    color: var(--the-lightest-color);
   }
 }
 
@@ -54,10 +54,10 @@
   }
 
   .logo-text {
-    color: var(--dark-black);
+    color: var(--the-darkest-color);
 
     .footer & {
-      color: var(--main-white-color);
+      color: var(--the-lightest-color);
     }
   }
 }
